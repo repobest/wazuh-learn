@@ -1,5 +1,7 @@
 # FreeBSD 14.2 or latest
 # Wazuh Agent was installed
+sed -e "s|quarterly|latest|g" -i.bak /etc/pkg/FreeBSD.conf
+
 # 1) Copy /etc/locatime to /var/ossec/etc directory
 cp /etc/localtime /var/ossec/etc
 

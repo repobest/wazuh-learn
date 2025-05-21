@@ -1,0 +1,8 @@
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+
+sudo ufw allow OpenSSH
+sudo ufw allow 'Apache Full'
+
+sudo ufw enable; sudo ufw reload 
+sudo ufw show added
